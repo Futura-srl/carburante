@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- MENU ROOT -->
+
+
+
+    <!-- MENU PRIMO LIVELLO -->
+
+
+    <!-- MENU ACTION -->
+
+    <menuitem id="hr_interinale_movimentazione_menu_action"
+    action="fleet_fuel"
+    parent="fleet.vehicle"
+    name="Carburante"/>
+
+
+</odoo>

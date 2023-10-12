@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="fleet_fuel" model="ir.actions.act_window">
+        <field name="name">Rifornimenti flotta</field>
+        <field name="res_model">fleet.fuel</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- Relativo alla visualizzazione della tabella ad alberlo -->
+    <record id="fleet_fuel_views_tree" model="ir.ui.view">
+        <field name="name">Rifornimenti flotta</field>
+        <field name="model">fleet.fuel</field>
+        <field name="arch" type="xml">
+            <tree string="Fleet Fuel" editable="bottom">
+                <field name="name"/>
+                <field name="businnes_name"/>
+                <field name="reference"/>
+                <field name="point_sale_code"/>
+                <field name="location"/>
+                <field name="address"/>
+                <field name="transaction_datetime"/>
+                <field name="ticket"/>
+                <field name="driver"/>
+                <field name="card_number"/>
+                <field name="fleet"/>
+                <field name="product"/>
+                <field name="quantity"/>
+                <field name="price_unit"/>
+                <field name="price"/>
+                <field name="tax"/>
+                <field name="invoice"/>
+                <field name="invoice_date"/>
+                <field name="invoice_discount"/>
+                <field name="tax_rate"/>
+                <field name="price_whitout_tax"/>
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>
