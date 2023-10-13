@@ -9,8 +9,9 @@
         # # Settaggi per accesso ai contenuti
         'data/ir.model.access.csv',
         # # Caricamento delle view,
-        # 'view/hr_update.xml',
         'view/fleet_fuel_view.xml',
+        'view/fleet_fuel_type_view.xml',
+        'view/fleet_fuel_company_view.xml',
         # Menu
         'view/menu.xml',
     ],
