@@ -58,4 +58,10 @@ class FleetFuel(models.Model):
                 record.name = record.reference
             else:
                 record.name = ''
-
+                
+                
+class FleetFieldsUpdate(models.Model):
+    _inherit = "fleet.vehicle"
+    
+    capacity = fields.Integer(string="Capacity")
+    euro = fields.Integer(string="Euro")
