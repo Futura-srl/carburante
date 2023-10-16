@@ -64,4 +64,5 @@ class FleetFieldsUpdate(models.Model):
     _inherit = "fleet.vehicle"
     
     capacity_vehicle = fields.Integer(string="Capacity")
-    euro = fields.Integer(string="Euro")
+    license_request = fields.Char(string="License request")
+    euro = fields.Selection([('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6')])
