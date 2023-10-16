@@ -63,5 +63,5 @@ class FleetFuel(models.Model):
 class FleetFieldsUpdate(models.Model):
     _inherit = "fleet.vehicle"
     
-    capacity = fields.Integer(string="Capacity")
+    capacity_vehicle = fields.Integer(string="Capacity")
     euro = fields.Integer(string="Euro")
