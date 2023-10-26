@@ -80,4 +80,3 @@ class FleetFieldsUpdate(models.Model):
             },
             'target': 'current',
         }
-
