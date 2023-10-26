@@ -73,10 +73,11 @@ class FleetFieldsUpdate(models.Model):
             'name': 'Rifornimenti',
             'type': 'ir.actions.act_window',
             'res_model': 'fleet.fuel',
-            'view_mode': 'tree',
+            'view_mode': 'tree,form',
             'domain': [('fleet_id', '=', self.id)],
             'context': {
                 'default_vehicle_id': self.id,
             },
             'target': 'current',
         }
+
