@@ -51,6 +51,7 @@ class FleetFuel(models.Model):
     invoice_discount = fields.Float(string='Invoice Discount', digits=(3, 3), readonly=True)
     tax_rate = fields.Float(string='Tax Rate', digits=(3, 3), readonly=True)
     price_without_tax = fields.Float(string='Price Without Tax', digits=(6, 3), readonly=True)
+    state = fields.Selection([('da_verificare', 'Da verificare'), ('verificato', 'Verificato'), ('richiesto_rimborso', 'Richiesto rimborso'), ('rimborsato', 'Rimborsato')])
 
     def _compute_res_partner_id(self):
         for record in self:
