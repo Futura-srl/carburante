@@ -58,9 +58,10 @@
             <xpath expr="//div[@class='o_kanban_image']" position="replace">
                 <div>
                     <field name="state_id" attrs="{'invisible': [('state_id', '!=', 4)]}" style="color:red; font-weight: bold; margin-right: 1em;"/> <!-- Mezzo dismesso -->
-                    <field name="state_id" attrs="{'invisible': [('state_id', '!=', 3)]}" style="color:green; font-weight: bold; margin-right: 1em;"/> <!-- Mezzo attivo -->
+                    <field name="state_id" attrs="{'invisible': [('state_id', '!=', 8)]}" style="color:green; font-weight: bold; margin-right: 1em;"/> <!-- Mezzo attivo -->
                     <field name="state_id" attrs="{'invisible': [('state_id', '!=', 5)]}" style="color:orange; font-weight: bold; margin-right: 1em;"/> <!-- Mezzo scorta -->
                     <field name="state_id" attrs="{'invisible': [('state_id', '!=', 6)]}" style="color:violet; font-weight: bold; margin-right: 1em;"/> <!-- Mezzo sostitutivo -->
+                    <field name="state_id" attrs="{'invisible': [('state_id', '!=', 9)]}" style="color:gold; font-weight: bold; margin-right: 1em;"/> <!-- Mezzo in arrivo -->
                     <br/>
                     <div class="o_kanban_image" t-attf-style="background-image:url('#{kanban_image('fleet.vehicle', 'image_128', record.id.raw_value)}')"/>
                 </div>
