@@ -19,10 +19,6 @@
                 <field name="euro"/>
                 <field name="license_request"/>
             </xpath>
-            <xpath expr="//label[@for='tag_ids']" position="before">
-                <label for="state_id"/>
-                <field name="state_id"/>
-            </xpath>
         </field>
     </record>
     <record id="fleet_vehicle_view_tree_inherit" model="ir.ui.view">
