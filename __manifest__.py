@@ -1,6 +1,6 @@
 {
     'name': 'carburante',
-    'version': '16',
+    'version': '17.0',
     'author': "Luca Cocozza",
     'application': True,
     'description': "Gestione dei rifornimenti relativi alla flotta aziendale.",
